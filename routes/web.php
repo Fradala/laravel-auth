@@ -19,7 +19,7 @@ use App\Http\Controllers\Admin\ProjectController as AdminProjectController;
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 Route::middleware('auth')
